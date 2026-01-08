@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>关于我</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Microsoft YaHei", sans-serif;
+      }
+      .title {
+        background-color: #e63946;
+        color: #f9f6f6;
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+      }
+
+      .about-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .avatar {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .avatar img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 4px solid #f1faee;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .about-card {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
+      .about-card h2 {
+        color: #e63946;
+        margin-bottom: 20px;
+        font-size: 22px;
+        border-bottom: 2px solid #efeded;
+        padding-bottom: 10px;
+      }
+      .about-card p {
+        line-height: 1.8;
+        color: #373737;
+        margin-bottom: 15px;
+      }
+
+      .experience li {
+        margin: 10px 0;
+        color: #504f4f;
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
+      }
+      .experience li:before {
+        content: "🏀";
+        position: absolute;
+        left: 0;
+      }
+
+      footer {
+        background-color: #e8f0e5;
+        padding: 20px;
+        text-align: center;
+        color: #696868;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">关于我</div>
+
+    <div class="about-container">
+      <div class="avatar">
+        <img src="./head.jpg" alt="" />
+      </div>
+      <div class="about-card">
+        <h2>关于博客</h2>
+        <p>
+          大家好！我是一名热爱篮球的大学生，从初中第一次接触篮球开始，就深深迷上了这项充满热血与激情的运动。
+        </p>
+        <p>
+          平时喜欢研究各种实战技巧，也爱记录自己打球的心得，开这个博客的初衷就是想和同样热爱篮球的朋友分享经验，一起进步！
+        </p>
+
+        <h2>篮球履历</h2>
+        <ul class="experience">
+          <li>初中校篮球队成员，司职控球后卫</li>
+          <li>高中班级联赛带队夺冠，获评“最有价值球员”</li>
+          <li>大学加入院篮球队，参与校内联赛</li>
+          <li>日常坚持野球实战，累计打球时长超2000小时</li>
+        </ul>
+
+        <h2>我的篮球宣言</h2>
+        <p>
+          篮球不只是一项运动，更是一种生活态度——永远保持热爱，永远全力以赴！
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>球场上的信仰 &copy; 2026 版权所有</p>
+    </footer>
+  </body>
+</html>

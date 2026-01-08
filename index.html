@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人博客篮球</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft YaHei", sans-serif;
+    }
+    .nav {
+      background-color: #e53935;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav .container {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav .menu a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 16px;
+    }
+    .nav .menu a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    .header-banner {
+      height: 400px;
+      background: url(curry.webp) no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .banner-text h1 {
+      font-size: 48px;
+      text-shadow: 0 0 10px black;
+    }
+    .banner-text p {
+      font-size: 20px;
+      margin-top: 15px;
+      text-shadow: 0 0 5px black;
+    }
+
+    .main-container {
+      width: 90%;
+      margin: 30px auto;
+      display: flex;
+      gap: 30px;
+    }
+
+    .article-list {
+      flex: 3;
+    }
+    .article-item {
+      background-color: #f8f8f8;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .article-item h3 {
+      color: #e53935;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .article-item .meta {
+      color: #706c6c;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .article-item p {
+      color: #323131;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+    .article-item a {
+      color: #e53935;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+    .sidebar-card {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+    }
+    .sidebar-card h4 {
+      font-size: 18px;
+      color: #e53935;
+      margin-bottom: 15px;
+      border-left: 3px solid #e53935;
+      padding-left: 10px;
+    }
+    .sidebar-card .profile {
+      text-align: center;
+    }
+    .sidebar-card .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid #e53935;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    .sidebar-card .tag a {
+      display: inline-block;
+      background-color: #f3eded;
+      border: 1px solid #e53935;
+      color: #e53935;
+      padding: 5px 10px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 5px 5px 0 0;
+    }
+    .footer {
+      background-color: #363535;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <a href=" " class="logo">球场上的信仰</a>
+        <div class="menu">
+          <a href="index.html">首页</a>
+          <a href="index1.html">球星专栏</a>
+          <a href="index3.html">实战技巧</a>
+          <a href="index4.html">关于我</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-banner">
+      <div class="banner-text">
+        <h1>篮球，是永不落幕的热爱</h1>
+        <p>记录每一次起跳、每一次投篮、每一份热血</p>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="article-list">
+        <div class="article-item">
+          <h3>突破的核心：如何练好运球变向</h3>
+          <div class="meta">发布于 2026-01-06 | 分类：实战技巧</div>
+          <p>
+            变向突破的关键不在于速度有多快，而在于节奏的变化。从基础的交叉步运球，到进阶的in&out，每一个动作都需要反复打磨...
+          </p>
+          <a href="#">阅读全文 ></a>
+        </div>
+        <div class="article-item">
+          <h3>我心中的历史第一控卫：库里的划时代意义</h3>
+          <div class="meta">发布于 2026-01-05 | 分类：球星专栏</div>
+          <p>
+            库里用三分球重新定义了篮球的打法，他让小个子球员也能成为球队的核心。他的投篮姿势、出手速度，都是值得我们学习的...
+          </p>
+          <a href="#">阅读全文 ></a>
+        </div>
+        <div class="article-item">
+          <h3>野球场生存指南：这5个细节让你少受伤</h3>
+          <div class="meta">发布于 2026-01-04 | 分类：经验分享</div>
+          <p>
+            野球场没有专业的裁判和防护，学会保护自己很重要。热身要充分、球鞋要合脚、避免过度发力，这些细节能让你打得更久...
+          </p>
+          <a href="#">阅读全文 ></a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-card">
+          <h4>博客个人信息</h4>
+          <div class="profile">
+            <img src="./head.jpg" alt="博主头像" />
+            <p>篮球爱好者</p>
+            <p>野球场常驻选手，专注分享实战技巧</p>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h4>热门标签</h4>
+          <div class="tag">
+            <a href="#">运球技巧</a>
+            <a href="#">三分投篮</a>
+            <a href="#">球星分析</a>
+            <a href="#">野球实战</a>
+            <a href="#">伤病防护</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>球场上的信仰 © 2026 版权所有 | 热爱永不褪色</p>
+    </div>
+  </body>
+</html>
